@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width" initial-scale="1.0">
+	<title>Html form</title>
+</head>
+<body>
+	<form action="/action_page.php">
+		<label for="name">Name:</label><br>
+		<input type="text" id= "name" name="name" placeholder="please enter your name" maxlength="25" required><br><br>
+		<label for="email">Email:</label><br>
+		<input type="text" name="email" id="email" value="test@example.com" autofocus required><br><br>
+		<label for="pswrd">Password:</label><br>
+        <input type="password" name="pswrd" id="pswrd"  minlength="6" required><br><br>
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+        	<option value="student">Student</option>
+        	<option value="employee">Employee</option>
+        	<option value="freelancer" selected>Freelancer</option>
+        </select><br><br>
+        <label for="date">Event date:</label><br>
+        <input type="date" name="Startdate" required><br><br>
+        Tickets:
+        <br>
+        	<input type="radio" name="tickets" value="1 ticket">1 Ticket <br>
+        	<input type="radio" name="ticket"  value="2 tickets" checked>2 Tickets <br>
+        	<input type="radio" name="tickets" value="3 tickets">3 Tickets <br><br>
+        Payment:
+        <br>
+            <input type="checkbox" name="Payment" value="online Payment" checked >Online payment<br>
+            <input type="checkbox" name="payment" value="direct payment"> Direct payment<br><br>
+             Notes: 
+             <br />
+            <textarea rows = "5" cols = "50" name = "description"></textarea><br><br>
+         Click Submit:
+        <input type = "submit" name = "submit" value = "Submit">
+
+
+	</form>
+
+</body>
+</html>
